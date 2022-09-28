@@ -1,10 +1,14 @@
 import entities.Calculo;
-import java.util.Scanner;
 
 public class Principal {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
-        Calculo.operacao();
+       
+        Calculo a =  new Calculo();
+        a.operacao();
 
     }
 
