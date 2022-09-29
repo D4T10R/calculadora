@@ -89,7 +89,19 @@ public class Calculo {
                 resultado = elevNum(getV1(), getV2());
                 System.out.printf("A elevação de %.2f ^ %.2f = %.2f", getV1(), getV2(), resultado);
                 return operacao();
-                
+            case 6:
+                System.out.println("Qual dos dois números deseja vê a raiz quadrada? ");
+                System.out.println("\n1 - " + getV1() +
+                                   "\n2 - " + getV2());
+                int escolha = sc.nextInt();
+                if (escolha == 1) {
+                    resultado = raizNum(getV1());
+                    System.out.printf("A raiz quadrada %.0f = %.2f", getV1(), resultado);
+                } else if (escolha == 2) {
+                    resultado = raizNum(getV2());
+                    System.out.printf("A raiz quadrada %.0f = %.2f", getV2(), resultado);
+                }
+                return operacao();
             default: 
                 System.out.println("Erro");
                 break;
@@ -119,4 +131,9 @@ public class Calculo {
         return Math.pow(v1, v2);
     }
 
+    public Double raizNum(Double num) {
+        return Math.sqrt(num);
+    }
+
 }
+
