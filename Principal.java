@@ -10,6 +10,10 @@ public class Principal {
         Calculo a =  new Calculo();
         a.operacao();
 
+        /* 
+          FAZENDO UMA CALCULADORA APENAS PARA EXERCITA O QUE JA FOI ESTUDADO
+         */
+
     }
 
 

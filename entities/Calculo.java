@@ -2,9 +2,8 @@ package entities;
 
 import java.util.Scanner;
 
-import javax.print.attribute.standard.RequestingUserName;
-
 import java.lang.Math;
+
 
 public class Calculo {
     
@@ -65,6 +64,7 @@ public class Calculo {
         int selecao = sc.nextInt();
 
         switch(selecao) {
+
             case 1:
                 Double resultado = somaNum(getV1(), getV2());
                 System.out.printf("\nA soma entre %.2f + %.2f = %.2f\n", getV1(), getV2(), resultado);
@@ -89,6 +89,7 @@ public class Calculo {
                 resultado = elevNum(getV1(), getV2());
                 System.out.printf("A elevação de %.2f ^ %.2f = %.2f", getV1(), getV2(), resultado);
                 return operacao();
+
             case 6:
                 System.out.println("Qual dos dois números deseja vê a raiz quadrada? ");
                 System.out.println("\n1 - " + getV1() +
@@ -102,9 +103,14 @@ public class Calculo {
                     System.out.printf("A raiz quadrada %.0f = %.2f", getV2(), resultado);
                 }
                 return operacao();
-            default: 
-                System.out.println("Erro");
+
+            case 7:
+                System.out.println("Finalizando o programa...");
                 break;
+
+            default: 
+                System.out.println("Escolha invalida");
+                operacao();
         }
 
 
